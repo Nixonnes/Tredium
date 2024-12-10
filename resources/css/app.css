@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+.article_section {
+    max-width: 80%;
+    margin-left:14%;
+}
+.article_show {
+    margin-left:20%;
+    max-width: 60%;
+    line-height: 1.95rem;
+}
+.article {
+    width:320px;
+}
+
