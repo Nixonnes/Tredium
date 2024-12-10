@@ -14,7 +14,7 @@ import Comment from "@/Components/Comment.vue";
          </div>
          <div class=" mt-4 ">
              <span class="text-2xl">👁️ {{ article.views }}</span>
-             <span class="m-4"><Like :article="article"/></span>
+             <span  class=" text-2xl m-4"><Like :article="article"/></span>
          </div>
             <div class="m-4">
                 <Tag :tags="tags"/>

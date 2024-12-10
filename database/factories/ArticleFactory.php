@@ -22,7 +22,6 @@ class ArticleFactory extends Factory
             'title' => fake()->text(40),
             'body' => fake()->paragraphs(6, true),
             'thumbnail_url' => fake()->imageUrl(600, 400),
-            'likes' => fake()->numberBetween(0, 1000),
             'slug' => Str::slug(fake()->text(32)),
         ];
     }

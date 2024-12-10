@@ -61,8 +61,10 @@ class ArticleController extends Controller
 
         // Увеличиваем счетчик в Redis
         Redis::incr($key);
+        $value = Redis::get($key);
         Artisan::queue('sync:counters');
-        $article->refresh();
+        $article->views = $value;
+        $article->save();
         return response()->json(['views' => $article->views], 200);
     }
     public function incrementLikes($slug)
